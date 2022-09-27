@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Remove-Li</title>
+</head>
+<style>
+    .color {
+        font-style: italic;
+    }
+</style>
+
+<body>
+    <h1>Different Color</h1>
+    <!-- <label for="Color">Choose a color:</label> -->
+    <div class="color">Choose a color:</div>
+    <br />
+    <select id="colorSelect">
+      <option value="blue">Blue</option>
+      <option value="pink">Pink</option>
+      <option value="orange">Orange</option>
+      <option value="yellow">Yellow</option>
+      <option value="green">Green</option>
+      <option value="red">Red</option>
+      <option value="brown"></option>
+    </select>
+    <br />
+    <br />
+    <input type="button" onclick="removecolor()" value="select and remove" />
+    <script>
+        function removecolor() {
+            var x = document.getElementById("colorSelect");
+            x.remove(x.selectedIndex);
+        }
+    </script>
+</body>
+
+</html>
